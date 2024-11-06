@@ -11,6 +11,14 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        green: {
+          100: "#39A93D",
+          200: "#EBF5ED",
+        },
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        instrumentSans: ["var(--font-instrumentsans)"],
       },
     },
   },
