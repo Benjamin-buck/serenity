@@ -4,6 +4,7 @@ import Container from "./Container";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { navigationLinks } from "@/constants/data";
 import Link from "next/link";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
@@ -22,16 +23,21 @@ const Navbar = () => {
         </div>
       </Container>
       <div className="max-md:px-5 border-t flex justify-between border-b font-instrumentSans font-semibold text-lg py-3 border-gray-200">
-        <div className="mx-auto container flex gap-5">
-          {navigationLinks.map(({ label, href }) => (
-            <Link
-              key={label}
-              href={href}
-              className="hover:text-green-100 transition-all duration-200"
-            >
-              {label}
-            </Link>
-          ))}
+        <div className="mx-auto container flex justify-between items-center">
+          <div className="flex gap-5">
+            {navigationLinks.map(({ label, href }) => (
+              <Link
+                key={label}
+                href={href}
+                className="hover:text-green-100 transition-all duration-200"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+          <div className="flex gap-2 items-center max-md:hidden">
+            <p>Cornwall Ontario</p> <FaLocationDot className="text-green-100" />
+          </div>
         </div>
       </div>
     </nav>
