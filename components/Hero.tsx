@@ -13,7 +13,7 @@ const Hero = () => {
               Give your home or <br />
               Business a <span>makeover</span>.
             </h2>
-            <p>
+            <p className="font-instrumentSans text-lg">
               Elevate your curb appeal with expert landscaping design,
               maintenance, and care. From lush lawns to stunning garden
               features, we bring your vision to life with precision and passion.
