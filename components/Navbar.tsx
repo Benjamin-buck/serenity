@@ -23,6 +23,13 @@ const Navbar = () => {
               <FaPhoneVolume /> 613.200.2938
             </Button>
           </div>
+          <div className="max-md:block hidden">
+            <Link href="tel:613-266-0369">
+              <Button>
+                <FaPhoneVolume /> Call
+              </Button>
+            </Link>
+          </div>
         </div>
       </Container>
       <div className="max-md:px-5 border-t flex justify-between border-b font-instrumentSans font-semibold text-lg py-3 border-gray-200">
