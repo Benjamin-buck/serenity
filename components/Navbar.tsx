@@ -5,6 +5,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { navigationLinks } from "@/constants/data";
 import Link from "next/link";
 import { FaLocationDot } from "react-icons/fa6";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
@@ -17,9 +18,11 @@ const Navbar = () => {
               Serenity <span className="text-black">Landscaping</span>
             </h1>
           </div>
-          <button className="max-md:hidden px-5 flex gap-2 items-center py-2 bg-green-100 text-white font-semibold rounded-md hover:ring-2 hover:ring-offset-2 hover:ring-black hover:bg-black hover:text-white transition-all duration-200">
-            <FaPhoneVolume /> 613.200.2938
-          </button>
+          <div className="max-md:hidden">
+            <Button>
+              <FaPhoneVolume /> 613.200.2938
+            </Button>
+          </div>
         </div>
       </Container>
       <div className="max-md:px-5 border-t flex justify-between border-b font-instrumentSans font-semibold text-lg py-3 border-gray-200">
