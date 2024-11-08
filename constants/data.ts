@@ -11,3 +11,5 @@ export const navigationLinks = [
 export const faq = [
   {question: 'This is a question', answer: 'This is an answer'},
 ]
+
+

@@ -14,7 +14,7 @@ const FAQPage = () => {
     <div className='mx-auto container max-md:px-6'>
         <div className='my-10'>
         <h1 className='text-4xl font-bold max-md:text-2xl'>Frequently Asked Questions</h1>
-        <p className='text-lg font-instrument'>Have any questions that weren't answered here? Feel free to contact us at ____.com</p>
+        <p className='text-lg font-instrument'>Have any questions that weren&apos;t answered here? Feel free to contact us at ____.com</p>
         </div>
         {faq.map(({question, answer}) => (
             <Accordion className="" key={question} type="single" collapsible>
