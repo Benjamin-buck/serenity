@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import Container from "./Container";
@@ -6,8 +7,10 @@ import { navigationLinks } from "@/constants/data";
 import Link from "next/link";
 import { FaLocationDot } from "react-icons/fa6";
 import Button from "./Button";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <nav>
       <Container>
@@ -39,7 +42,9 @@ const Navbar = () => {
               <Link
                 key={label}
                 href={href}
-                className="hover:text-green-100 transition-all duration-200"
+                className={`hover:text-green-100 transition-all duration-200 ${
+                  pathname === href && "text-green-100"
+                }`}
               >
                 {label}
               </Link>
