@@ -26,7 +26,7 @@ const AboutPage = () => {
                   <Image
                     src={image.image}
                     alt="Image"
-                    className="rounded-md object-cover -mt-[10%]"
+                    className="rounded-md object-cover"
                     fill
                   />
                 </AspectRatio>
@@ -40,7 +40,7 @@ const AboutPage = () => {
         <CarouselNext />
       </Carousel>
 
-      <div>
+      <div className="my-10">
         <h1 className="text-4xl font-bold max-md:text-2xl">{ourStory.title}</h1>
         {ourStory.paragraphs.map((paragraph) => (
           <p key={paragraph} className="text-lg my-6">

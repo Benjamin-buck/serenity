@@ -1,5 +1,6 @@
 import { title } from "process";
-
+// GLOBAL
+// ========
 // Navigation Links
 export const navigationLinks = [
   { label: "Home", href: "/" },
@@ -7,6 +8,26 @@ export const navigationLinks = [
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
 ];
+
+export const phoneNumber = {
+  buttonDisplay: "613.200.2983",
+  href: "tel:613-266-0369",
+};
+
+// Footer
+
+// HOME
+// ========
+export const home = {
+  heroText: {
+    heading: "Give your home or business a",
+    coloredText: "makeover",
+    description:
+      "Elevate your curb appeal with expert landscaping design, maintenance, and care. From lush lawns to stunning garden features, we bring your vision to life with precision and passion.",
+  },
+  buttonText: "Get a Free Quote Today!",
+  bannerText: "Trusted by our local partner organiations",
+};
 
 // FAQ Questions and Answers:
 export const faq = [

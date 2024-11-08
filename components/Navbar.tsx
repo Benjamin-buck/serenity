@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Container from "./Container";
 import { FaPhoneVolume } from "react-icons/fa6";
-import { navigationLinks } from "@/constants/data";
+import { navigationLinks, phoneNumber } from "@/constants/data";
 import Link from "next/link";
 import { FaLocationDot } from "react-icons/fa6";
 import Button from "./Button";
@@ -23,11 +23,11 @@ const Navbar = () => {
           </div>
           <div className="max-md:hidden">
             <Button>
-              <FaPhoneVolume /> 613.200.2938
+              <FaPhoneVolume /> {phoneNumber.buttonDisplay}
             </Button>
           </div>
           <div className="max-md:block hidden">
-            <Link href="tel:613-266-0369">
+            <Link href={phoneNumber.href}>
               <Button>
                 <FaPhoneVolume /> Call
               </Button>
