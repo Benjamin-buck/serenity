@@ -15,12 +15,14 @@ const Navbar = () => {
     <nav>
       <Container>
         <div className="flex justify-between items-center max-md:px-5">
-          <div className="flex gap-2 items-center py-6">
-            <Image src="/logo.svg" height={37} width={37} alt="logo icon" />
-            <h1 className="max-md:text-xl text-3xl text-green-100 font-bold">
-              Serenity <span className="text-black">Landscaping</span>
-            </h1>
-          </div>
+          <Link href="/">
+            <div className="flex gap-2 items-center py-6">
+              <Image src="/logo.svg" height={37} width={37} alt="logo icon" />
+              <h1 className="max-md:text-xl text-3xl text-green-100 font-bold">
+                Serenity <span className="text-black">Landscaping</span>
+              </h1>
+            </div>
+          </Link>
           <div className="max-md:hidden">
             <Button>
               <FaPhoneVolume /> {phoneNumber.buttonDisplay}
