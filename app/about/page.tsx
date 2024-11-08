@@ -33,7 +33,6 @@ const AboutPage = () => {
               </div>
             </CarouselItem>
           ))}
-
           <CarouselItem>...</CarouselItem>
           <CarouselItem>...</CarouselItem>
         </CarouselContent>
@@ -44,7 +43,9 @@ const AboutPage = () => {
       <div>
         <h1 className="text-4xl font-bold max-md:text-2xl">{ourStory.title}</h1>
         {ourStory.paragraphs.map((paragraph) => (
-          <p className="text-lg my-6">{paragraph}</p>
+          <p key={paragraph} className="text-lg my-6">
+            {paragraph}
+          </p>
         ))}
       </div>
     </div>
