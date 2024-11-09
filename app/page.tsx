@@ -8,10 +8,10 @@ export default function Home() {
     <>
       <Hero />
       <Banner />
-      <section className="relative bg-green-50 pb-[40px]">
+      <section className="relative bg-green-50 pb-[40px] ">
         <Progress />
-        <div className="container mx-auto flex gap-4 font-instrumentSans">
-          <div className="w-[70%]">
+        <div className="container mx-auto flex gap-4 font-instrumentSans max-lg:flex-col-reverse max-md:px-6">
+          <div className="w-[70%] max-lg:w-auto max-lg:mt-4 ">
             <div>
               <h4 className="text-md font-bold">Our Services</h4>
               <h1 className="text-4xl font-bold">

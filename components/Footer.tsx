@@ -3,8 +3,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full mx-auto container my-2 flex justify-between items-center">
-      <div className="flex gap-2 items-center">
+    <div className="w-full mx-auto container my-2 flex justify-between items-center max-md:px-6">
+      <div className="flex gap-2 items-center ">
         <Image src="/logo.svg" width={40} height={40} alt="logo" />
         <h1 className="text-black font-instrumentSans text-xl font-semibold max-md:hidden">
           Serenity Landscaping
