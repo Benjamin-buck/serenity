@@ -29,6 +29,33 @@ export const home = {
   bannerText: "Trusted by our local partner organiations",
 };
 
+export const services = [
+  {
+    id: 1,
+    label: "Lawn Care",
+    description:
+      "With expert care and attention to detail, we ensure your grass grows stronger, your soil stays nourished, and your landscape remains beautiful.",
+  },
+  {
+    id: 2,
+    label: "Lawn Care",
+    description:
+      "With expert care and attention to detail, we ensure your grass grows stronger, your soil stays nourished, and your landscape remains beautiful.",
+  },
+  {
+    id: 3,
+    label: "Lawn Care",
+    description:
+      "With expert care and attention to detail, we ensure your grass grows stronger, your soil stays nourished, and your landscape remains beautiful.",
+  },
+  {
+    id: 4,
+    label: "Lawn Care",
+    description:
+      "With expert care and attention to detail, we ensure your grass grows stronger, your soil stays nourished, and your landscape remains beautiful.",
+  },
+];
+
 // FAQ Questions and Answers:
 export const faq = [
   { question: "This is a question", answer: "This is an answer" },

@@ -2,6 +2,7 @@ import Banner from "@/components/banner";
 import Hero from "@/components/Hero";
 import Progress from "@/components/Progress";
 import Button from "@/components/Button";
+import { services } from "@/constants/data";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <Banner />
       <section className="relative bg-green-50 pb-[40px] ">
         <Progress />
-        <div className="container mx-auto flex gap-4 font-instrumentSans max-lg:flex-col-reverse max-md:px-6">
+        <div className="container py-[100px] mx-auto flex gap-4 font-instrumentSans space-x-10 max-lg:flex-col-reverse max-md:px-6">
           <div className="w-[70%] max-lg:w-auto max-lg:mt-4 ">
             <div>
               <h4 className="text-md font-bold">Our Services</h4>
@@ -21,6 +22,17 @@ export default function Home() {
                 We offer a variety of services for your home or business, and
                 offer discounts for customers who purchase multiple services.
               </p>
+            </div>
+            <div className="grid grid-cols-2 gap-8 mt-10 max-lg:grid-cols-1">
+              {services.map(({ label, id, description }) => (
+                <div
+                  key={id}
+                  className="col-span-1 bg-white px-8 py-8 shadow-md rounded-lg"
+                >
+                  <h3 className="text-center font-bold text-2xl">{label}</h3>
+                  <p>{description}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="rounded-md flex-1 bg-white h-fit px-6 py-4 shadow-md">
