@@ -4,7 +4,7 @@ import { title } from "process";
 // Navigation Links
 export const navigationLinks = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
+  // { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
 ];
