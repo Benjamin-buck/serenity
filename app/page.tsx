@@ -11,7 +11,7 @@ export default function Home() {
       <Banner />
       <section className="relative bg-green-50 pb-[40px] ">
         <Progress />
-        <div className="container py-[100px] mx-auto flex gap-4 font-instrumentSans space-x-10 max-lg:flex-col-reverse max-md:px-6">
+        <div className="container py-[100px] mx-auto flex gap-4 font-instrumentSans space-x-10 max-lg:space-x-0 max-lg:py-2 max-lg:flex-col-reverse max-md:px-6">
           <div className="w-[70%] max-lg:w-auto max-lg:mt-4 ">
             <div>
               <h4 className="text-md font-bold">Our Services</h4>
