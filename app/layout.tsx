@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Instrument_Sans, Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Serenity Landscaping",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${inter.variable}  ${instrumentSans.variable}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
